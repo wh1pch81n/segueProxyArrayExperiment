@@ -13,6 +13,7 @@
 		7F55F3121DE0B76A00C94A03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F55F3101DE0B76A00C94A03 /* Main.storyboard */; };
 		7F55F3141DE0B76A00C94A03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F55F3131DE0B76A00C94A03 /* Assets.xcassets */; };
 		7F55F3171DE0B76A00C94A03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F55F3151DE0B76A00C94A03 /* LaunchScreen.storyboard */; };
+		7F55F3201DE0CAC400C94A03 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F55F31F1DE0CAC400C94A03 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		7F55F3131DE0B76A00C94A03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F55F3161DE0B76A00C94A03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F55F3181DE0B76A00C94A03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F55F31E1DE0CAC400C94A03 /* SegueTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SegueTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		7F55F31F1DE0CAC400C94A03 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +65,13 @@
 				7F55F30B1DE0B76900C94A03 /* AppDelegate.m */,
 				7F55F30D1DE0B76A00C94A03 /* ViewController.h */,
 				7F55F30E1DE0B76A00C94A03 /* ViewController.m */,
+				7F55F31F1DE0CAC400C94A03 /* File.swift */,
 				7F55F3101DE0B76A00C94A03 /* Main.storyboard */,
 				7F55F3131DE0B76A00C94A03 /* Assets.xcassets */,
 				7F55F3151DE0B76A00C94A03 /* LaunchScreen.storyboard */,
 				7F55F3181DE0B76A00C94A03 /* Info.plist */,
 				7F55F3071DE0B76900C94A03 /* Supporting Files */,
+				7F55F31E1DE0CAC400C94A03 /* SegueTest-Bridging-Header.h */,
 			);
 			path = SegueTest;
 			sourceTree = "<group>";
@@ -110,6 +115,7 @@
 				TargetAttributes = {
 					7F55F3031DE0B76900C94A03 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -151,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F55F30F1DE0B76A00C94A03 /* ViewController.m in Sources */,
+				7F55F3201DE0CAC400C94A03 /* File.swift in Sources */,
 				7F55F30C1DE0B76900C94A03 /* AppDelegate.m in Sources */,
 				7F55F3091DE0B76900C94A03 /* main.m in Sources */,
 			);
@@ -272,10 +279,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SegueTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dnthome.SegueTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SegueTest/SegueTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -283,10 +294,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SegueTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dnthome.SegueTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SegueTest/SegueTest-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
